@@ -3,6 +3,6 @@ def reverse_each_word(string)
   reversed = []
 
   split_string.each do |word|
-    reversed << word
+    word.size.times {reversed << word}
   end
 end
