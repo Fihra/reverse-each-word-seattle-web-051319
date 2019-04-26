@@ -2,7 +2,7 @@ def reverse_each_word(string)
   split_string = string.split(" ")
   reversed = []
 
-  split_string.each do |word|
+  split_string.collect do |word|
     word.size.times {reversed << word}
   end
 end
